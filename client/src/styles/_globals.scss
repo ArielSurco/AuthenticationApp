@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600&display=swap");
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -9,7 +11,8 @@ html {
 }
 
 body {
-  background-color: $bg-main;
+  background-color: var(--bg-main);
+  font-family: "Noto Sans", sans-serif;
 }
 
 a {
@@ -18,4 +21,11 @@ a {
 
 li {
   list-style: none;
+}
+
+$font-weights: 300, 400, 500, 600;
+@each $fw in (300, 400, 500, 600) {
+  .fw-#{$fw} {
+    font-weight: $fw;
+  }
 }

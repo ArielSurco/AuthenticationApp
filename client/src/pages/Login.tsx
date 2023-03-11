@@ -1,6 +1,9 @@
+// Internal
+import { Title } from 'components/ui/atoms';
+
 const Login = () => (
   <div>
-    Login
+    <Title>Login</Title>
   </div>
 );
 
