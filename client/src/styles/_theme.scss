@@ -1,0 +1,17 @@
+:root {
+  --bg-main: #fff;
+  --primary-light: #2d9cdb;
+  --primary: #2f80ed;
+  --secondary-light: #bdbdbd;
+  --secondary: #828282;
+  --secondary-dark: #333;
+}
+
+[theme="dark"] {
+  --bg-main: #1f1f1f;
+  --primary-light: #2d9cdb;
+  --primary: #2f80ed;
+  --secondary-light: #bdbdbd;
+  --secondary: #828282;
+  --secondary-dark: #e0e0e0;
+}
