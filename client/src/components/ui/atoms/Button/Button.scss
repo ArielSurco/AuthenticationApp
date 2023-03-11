@@ -1,0 +1,49 @@
+@mixin outlineVariant($color) {
+  border: 1px solid $color;
+  background-color: transparent;
+  color: $color;
+}
+
+@mixin btnVariant($textColor, $bgColor) {
+  color: $textColor;
+  background-color: $bgColor;
+  transition: background-color 0.4s ease;
+
+  &.btn-outline {
+    @include outlineVariant($bgColor);
+
+    &:not(.btn-icon):hover {
+      background-color: $bgColor;
+      color: $textColor;
+    }
+  }
+}
+
+.btn {
+  padding: 0.6rem 1.6rem 0.9rem;
+  text-align: center;
+  border-radius: 0.8rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+
+  &-primary {
+    @include btnVariant(var(--light), var(--primary));
+
+    font-weight: 600;
+  }
+
+  &-secondary {
+    @include btnVariant(var(--light), var(--secondary));
+
+    font-weight: 500;
+    border-radius: 1.2rem;
+  }
+
+  &.btn-icon {
+    width: fit-content;
+    height: fit-content;
+    margin: 0;
+    padding: 0;
+    border: none;
+  }
+}
