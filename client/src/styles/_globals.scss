@@ -40,6 +40,12 @@ input {
   outline: none;
 }
 
+.divider {
+  border: none;
+  height: 1px;
+  background-color: var(--secondary-lighter);
+}
+
 $font-weights: 300, 400, 500, 600;
 @each $fw in (300, 400, 500, 600) {
   .fw-#{$fw} {

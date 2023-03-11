@@ -17,6 +17,7 @@ const Login = () => (
     <Input placeholder="Example" icon={<MdEmail style={{ width: '2.2rem', height: '2.2rem' }} />} />
     <Input placeholder="Example" icon={<MdLock style={{ width: '2.2rem', height: '2.2rem' }} />} />
     <Button variant="primary">Login</Button>
+    <hr className="divider" />
     <Button variant="secondary" isOutline>Edit</Button>
   </Card>
 );
