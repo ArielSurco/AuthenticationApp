@@ -1,5 +1,5 @@
 import {
-  createContext, FC, useMemo, useState,
+  createContext, useMemo, useState,
 } from 'react';
 
 export interface IAuthContext {
@@ -12,7 +12,7 @@ export interface IAuthProviderProps {
 
 export const AuthContext = createContext({} as IAuthContext);
 
-export const AuthProvider: FC<IAuthProviderProps> = ({ children }: IAuthProviderProps) => {
+export const AuthProvider = ({ children }: IAuthProviderProps) => {
   const [isAuth] = useState(false);
 
   const providerValues: IAuthContext = useMemo(() => ({ isAuth }), [isAuth]);
