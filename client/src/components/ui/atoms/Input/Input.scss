@@ -1,3 +1,15 @@
+.input-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.label {
+  color: var(--secondary-dark);
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
 .input-container {
   display: flex;
   height: 4.4rem;
