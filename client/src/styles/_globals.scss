@@ -35,6 +35,11 @@ input[type="reset"] {
   outline: inherit;
 }
 
+input {
+  border: none;
+  outline: none;
+}
+
 $font-weights: 300, 400, 500, 600;
 @each $fw in (300, 400, 500, 600) {
   .fw-#{$fw} {
