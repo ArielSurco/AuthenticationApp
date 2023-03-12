@@ -1,0 +1,34 @@
+.profile-menu-item {
+  display: flex;
+  padding: 1.1rem 1.3rem;
+  align-items: center;
+  border-bottom: 1px solid var(--secondary-lighter);
+  border-radius: 0.8rem;
+  background-color: inherit;
+  color: var(--secondary-dark);
+  transition: background-color 0.2s ease;
+
+  &:hover {
+    background-color: var(--tertiary);
+    border-bottom: none;
+  }
+
+  &-icon {
+    flex-basis: 2.7rem;
+    color: inherit;
+
+    svg {
+      display: inline-block;
+    }
+  }
+
+  &-label {
+    color: inherit;
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+
+  &.last-item {
+    border-bottom: none;
+  }
+}

@@ -1,9 +1,10 @@
 // External
 import { MdLock, MdEmail } from 'react-icons/md';
+import { FaUserCircle } from 'react-icons/fa';
 
 // Internal
 import {
-  Button, Card, Input, ProfileAvatar, Title,
+  Button, Card, Input, ProfileAvatar, ProfileMenuItem, Title,
 } from 'components/ui/atoms';
 
 // Assets
@@ -20,6 +21,7 @@ const Login = () => (
     <hr className="divider" />
     <Button variant="secondary" isOutline>Edit</Button>
     <ProfileAvatar size="lg" isEditable onEdit={() => alert('Edited')} />
+    <ProfileMenuItem label="Profile" icon={<FaUserCircle style={{ width: '1.8rem', height: '1.8rem' }} />} />
   </Card>
 );
 
