@@ -39,7 +39,15 @@
     border-radius: 1.2rem;
   }
 
-  &.btn-icon {
+  &-unstyled {
+    width: fit-content;
+    height: fit-content;
+    padding: 0;
+    text-align: unset;
+    border-radius: 0;
+  }
+
+  &-icon {
     display: flex;
     width: fit-content;
     height: fit-content;

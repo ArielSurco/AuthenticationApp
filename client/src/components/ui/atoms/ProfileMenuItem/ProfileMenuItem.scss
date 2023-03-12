@@ -2,7 +2,6 @@
   display: flex;
   padding: 1.1rem 1.3rem;
   align-items: center;
-  border-bottom: 1px solid var(--secondary-lighter);
   border-radius: 0.8rem;
   background-color: inherit;
   color: var(--secondary-dark);
@@ -10,10 +9,11 @@
 
   &:hover {
     background-color: var(--tertiary);
-    border-bottom: none;
   }
 
   &-icon {
+    display: flex;
+    align-items: center;
     flex-basis: 2.7rem;
     color: inherit;
 
@@ -26,9 +26,5 @@
     color: inherit;
     font-size: 1.2rem;
     font-weight: 500;
-  }
-
-  &.last-item {
-    border-bottom: none;
   }
 }

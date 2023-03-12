@@ -8,7 +8,7 @@ import { concatClassnames } from 'utils/functions';
 import './Button.scss';
 
 interface IButtonProps extends HTMLAttributes<HTMLButtonElement> {
-  variant?: 'primary' | 'secondary' | 'icon';
+  variant?: 'primary' | 'secondary' | 'icon' | 'unstyled';
   isOutline?: boolean;
   isIcon?: boolean;
   isSubmit?: boolean;

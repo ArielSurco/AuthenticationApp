@@ -16,7 +16,7 @@ import { ProfileMenu } from 'components/ui/molecules';
 const mockItems = [
   { label: 'My profile', icon: <FaUserCircle style={{ width: '1.8rem', height: '1.8rem' }} /> },
   { label: 'Group Chat', icon: <MdGroup style={{ width: '1.8rem', height: '1.8rem' }} />, hasDivider: true },
-  { label: 'Logout', icon: <MdLogout style={{ width: '1.8rem', height: '1.8rem', color: 'red' }} /> },
+  { label: 'Logout', icon: <MdLogout style={{ width: '1.8rem', height: '1.8rem' }} />, color: 'var(--error)' },
 ];
 
 const Login = () => (

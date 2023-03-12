@@ -18,7 +18,7 @@ interface IProfileAvatarProps {
 }
 
 const ProfileAvatar = ({
-  className = '', src = DefaultAvatar, size = 'sm', isEditable = false, onEdit = () => {},
+  className = '', src = '', size = 'sm', isEditable = false, onEdit = () => {},
 }: IProfileAvatarProps) => (
   <div className={concatClassnames(className, 'profile-avatar-container', `size-${size}`, isEditable && 'is-editable')}>
     <div className="edit-avatar-icon-container">
@@ -26,7 +26,7 @@ const ProfileAvatar = ({
         <MdCameraAlt className="edit-avatar-icon" />
       </Button>
     </div>
-    <img className="profile-avatar" src={src} alt="Profile Avatar" />
+    <img className="profile-avatar" src={src || DefaultAvatar} alt="Profile Avatar" />
   </div>
 );
 
