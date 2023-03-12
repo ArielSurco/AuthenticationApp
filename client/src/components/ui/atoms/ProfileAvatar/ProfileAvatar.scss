@@ -1,0 +1,53 @@
+.profile-avatar-container {
+  position: relative;
+  width: min-content;
+
+  &.size-sm {
+    width: 3.2rem;
+    height: 3.2rem;
+  }
+
+  &.size-lg {
+    width: 7.2rem;
+    height: 7.2rem;
+  }
+
+  .edit-avatar-icon-container {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+
+    .edit-avatar-icon-button {
+      pointer-events: none;
+
+      .edit-avatar-icon {
+        width: 2.4rem;
+        height: 2.4rem;
+        color: var(--light);
+      }
+    }
+  }
+
+  &.is-editable:hover {
+    .edit-avatar-icon-container {
+      opacity: 1;
+
+      .edit-avatar-icon-button {
+        pointer-events: all;
+      }
+    }
+  }
+
+  .profile-avatar {
+    border-radius: 0.8rem;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+}

@@ -40,10 +40,14 @@
   }
 
   &.btn-icon {
+    display: flex;
     width: fit-content;
     height: fit-content;
     margin: 0;
     padding: 0;
+    justify-content: center;
+    align-items: center;
     border: none;
+    background-color: transparent;
   }
 }

@@ -3,7 +3,7 @@ import { MdLock, MdEmail } from 'react-icons/md';
 
 // Internal
 import {
-  Button, Card, Input, Title,
+  Button, Card, Input, ProfileAvatar, Title,
 } from 'components/ui/atoms';
 
 // Assets
@@ -19,6 +19,7 @@ const Login = () => (
     <Button variant="primary">Login</Button>
     <hr className="divider" />
     <Button variant="secondary" isOutline>Edit</Button>
+    <ProfileAvatar size="lg" isEditable onEdit={() => alert('Edited')} />
   </Card>
 );
 
