@@ -1,5 +1,7 @@
 // External
-import { MdLock, MdEmail } from 'react-icons/md';
+import {
+  MdLock, MdEmail, MdGroup, MdLogout,
+} from 'react-icons/md';
 import { FaUserCircle } from 'react-icons/fa';
 
 // Internal
@@ -9,6 +11,13 @@ import {
 
 // Assets
 import Logo from 'assets/devchallenges.svg';
+import { ProfileMenu } from 'components/ui/molecules';
+
+const mockItems = [
+  { label: 'My profile', icon: <FaUserCircle style={{ width: '1.8rem', height: '1.8rem' }} /> },
+  { label: 'Group Chat', icon: <MdGroup style={{ width: '1.8rem', height: '1.8rem' }} />, hasDivider: true },
+  { label: 'Logout', icon: <MdLogout style={{ width: '1.8rem', height: '1.8rem', color: 'red' }} /> },
+];
 
 const Login = () => (
   <Card>
@@ -22,6 +31,10 @@ const Login = () => (
     <Button variant="secondary" isOutline>Edit</Button>
     <ProfileAvatar size="lg" isEditable onEdit={() => alert('Edited')} />
     <ProfileMenuItem label="Profile" icon={<FaUserCircle style={{ width: '1.8rem', height: '1.8rem' }} />} />
+    <ProfileMenu
+      label="Xanthe Neal"
+      items={mockItems}
+    />
   </Card>
 );
 
